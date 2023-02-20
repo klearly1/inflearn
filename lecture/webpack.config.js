@@ -2,7 +2,7 @@ const path = require('path'); //노드 깔려있으면 path 는 당연히 있다
 const RefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
 module.exports = {
-    name: 'tictactoc-setting',
+    name: 'minesearch-setting',
     mode: 'development', // 실서비스 : production
     devtool: 'eval',
     resolve: { //확장자 확장 

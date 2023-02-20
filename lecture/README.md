@@ -1,33 +1,70 @@
-require와 import의 주요 차이점.
+# Getting Started with Create React App
 
--   require()는 CommonJS를 사용하는 node.js문이지만 import()는 ES6에서만 사용
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
--   require()는 파일 (어휘가 아님)에 들어있는 곳에 남아 있으며 import()는 항상 맨 위로 이동
+## Available Scripts
 
--   require()는 프로그램의 어느 지점에서나 호출 할 수 있지만 import()는 파일의 시작 부분에서만 실행할 수 있다. 
-    (그렇지만 import 전용 비동기 문법으로 파일 중간에 모듈 불러오기를 할 수 있다.)
+In the project directory, you can run:
 
--   하나의 프로그램에서 두 키워드를 동시에 사용할 수 없다
+### `npm start`
 
--   일반적으로 import()는 사용자가 필요한 모듈 부분 만 선택하고 로드 할 수 있기 때문에 더 선호된다. 
-    또한 require()보다 성능이 우수하며 메모리를 절약한다.
-  
-------------------------------------------------------------
-babel이 import도 require로 바꿔준다
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-export const hello = 'hello'; // import { hello }
-export const bye = 'hello'; // import { hello, bye }
+### `npm test`
 
-export default hello; // import hello;
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `npm run build`
 
-npm init
-npm i react react-dom babel-loader @babel/core
-npm i -D webpack webpack-cli @babel/preset-env @babel/preset-react
-npm i react-refresh -D @pmmmwh/react-refresh-webpack-plugin @babel/plugin-proposal-class-properties 
-npm i -D webpack-dev-server
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-npx webpack
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-webpack.config.js가 기본적인 이름이여야 한다.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
